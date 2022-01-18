@@ -1,0 +1,107 @@
+[{
+        "type": "genre",
+        "questionText": "Какой стиль игры вам по вкусу",
+        "answers": [{
+            "text": "racing",
+            "description": "Гонки"
+        }, {
+            "text": "sim",
+            "description": "Симулятор"
+        }, {
+            "text": "shooter",
+            "description": "Шутер"
+        }, {
+            "text": "adventure",
+            "description": "Приключение"
+        }],
+        "addText": "Укажите жанр игры"
+    },
+
+    {
+        "type": "gameLove",
+        "questionText": "Готовы ли вы уделять много времени видеоиграм",
+        "answers": [{
+            "text": true,
+            "description": "Да"
+        }, {
+            "text": false,
+            "description": "Нет"
+        }],
+        "addText": "Укажите необходимость уделения времени игре"
+    },
+
+    {
+        "type": "difficulty",
+        "questionText": "Предпочитаемый уровень сложности",
+        "answers": [{
+            "text": "easy",
+            "description": "Легкий"
+        }, {
+            "text": "amateur",
+            "description": "Средний"
+        }, {
+            "text": "hard",
+            "description": "Сложный"
+        }],
+        "addText": "Укажите уровень сложности"
+    },
+
+    {
+        "type": "riddle",
+        "questionText": "Вам нравится подумать над загадками",
+        "answers": [{
+            "text": true,
+            "description": "Да"
+        }, {
+            "text": false,
+            "description": "Нет"
+        }],
+        "addText": "Укажите наличие загадок"
+    },
+
+    {
+        "type": "price",
+        "questionText": "Какой бюджет вы готовы потратить на игру",
+        "answers": [{
+                "text": "free",
+                "description": "0"
+            }, {
+                "text": "cheapestPriceSegment",
+                "description": "100-300"
+            },
+            {
+                "text": "cheapPriceSegment",
+                "description": "300-500"
+            }, {
+                "text": "middlePriceSegment",
+                "description": "500-1000"
+            },
+            {
+                "text": "expensivePriceSegment",
+                "description": "1000+"
+            }
+        ],
+        "addText": "Укажите бюджет игры"
+    },
+    {
+        "type": "design",
+        "questionText": "Насколько проработанной должна быть графика в играх",
+        "answers": [{
+                "text": "good",
+                "description": "Достойный уровень"
+            }, {
+                "text": "best",
+                "description": "Графика высшего качества"
+            },
+            {
+                "text": "visible",
+                "description": "Достаточно просто различать объекты"
+            }, {
+                "text": "neverMind",
+                "description": "Не важно"
+            }
+        ],
+        "addText": "Укажите уровень графики"
+    }
+
+]
