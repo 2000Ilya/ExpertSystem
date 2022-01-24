@@ -1,12 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "../InterResult/InterResult.css";
 import games from "../../resources/games.json";
+import { dictionary } from "../../resources/dictionary";
 
 function InterResult({ answers }) {
   // const answers = localStorage.getItem("answers");
 
   var matches = 0;
+  let args = [];
   const result = sortResults(filterResults());
+
+  useEffect(() => {
+    args = [];
+  }, [answers]);
+
+  function getArgs(game) {
+    for (let key in answers) {
+      if (String(answers[key]) == String(game[key])) {
+        args.push(dictionary[key]);
+      }
+    }
+  }
 
   function filterResults() {
     let current = [];
@@ -33,7 +47,8 @@ function InterResult({ answers }) {
 
   function sortResults(games) {
     console.log(games);
-    games.sort((prev, next) => next.mark - prev.mark);
+    games = games.sort((prev, next) => next.mark - prev.mark);
+    getArgs(games[0]);
     return games[0];
   }
 
@@ -43,6 +58,10 @@ function InterResult({ answers }) {
       <img src={result.pictureLink} />
       <p className="result_name">{result.gameName}</p>
       <p>Количество совпадений: {matches}</p>
+      {args.length > 0 &&
+        args.map((el) => {
+          return <p key={el}>{el}</p>;
+        })}
     </div>
   );
 }

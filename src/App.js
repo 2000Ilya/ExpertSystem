@@ -88,6 +88,7 @@ function App() {
               </>
             ) : (
               <>
+                {/* <h1 onClick={() => console.log(result)}>Xb lf</h1> */}
                 <button
                   onClick={() =>
                     setCounter((prevCounter) => {
